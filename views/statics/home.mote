@@ -1,8 +1,12 @@
+<header>
+  <a href="/"><img src="/img/logo.png" height="100" width="134" /></a>
+</header>
+
 <section class="welcome">
   <p>
     Bienvenido a la comunidad de usuarios de Ruby en Perú. Ruby es un lenguaje de programación
     que puedes usar para construir cualquier tipo de software. Es muy popular para desarrollo
-    web gracias a <a href="http://rubyonrails.org/">Ruby on Rails</a>.
+    web con un framework llamado <a href="http://rubyonrails.org/">Ruby on Rails</a>.
   </p>
 </section>
 

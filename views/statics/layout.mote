@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Ruby Perú | Comunidad peruana de usuarios de Ruby</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" />
+    <link rel="stylesheet" href="//meyerweb.com/eric/tools/css/reset/reset.css" />
+    <link rel="stylesheet" href="/css/statics.css" />
   </head>
   <body>
     {{ content }}
