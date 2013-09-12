@@ -1,0 +1,78 @@
+<section class="welcome">
+  <p>
+    Bienvenido a la comunidad de usuarios de Ruby en Perú. Ruby es un lenguaje de programación
+    que puedes usar para construir cualquier tipo de software. Es muy popular para desarrollo
+    web gracias a <a href="http://rubyonrails.org/">Ruby on Rails</a>.
+  </p>
+</section>
+
+<section>
+  <dl>
+    <dt>
+      Aprende Ruby y Ruby on Rails
+    </dt>
+
+    <dd>
+      Sigue esta guía para
+      <a href="https://github.com/rubyperu/aprende.a.programar">aprender a programar</a>
+      con Ruby. Si estás buscando cómo comenzar en Rails, puedes leer
+      <a href="https://github.com/rubyperu/introduccion.a.rails">Introducción a Rails</a>.
+      En <a href="https://github.com/rubyperu/rubyperu.github.com/wiki">nuestro wiki</a>
+      encontrarás más información sobre Ruby, Ruby on Rails y otros. Es libre y tu
+      colaboración es bienvenida.
+    </dd>
+
+    <dt>
+      ¿Cómo te podemos ayudar?
+    </dt>
+
+    <dd>
+      En <a href="https://groups.google.com/group/rubyperu/">nuestra lista de correo</a>
+      resolvemos dudas, compartimos información y discutimos sobre Ruby. También puedes
+      participar en nuestro <a href="https://epicperu.campfirenow.com/c95a3">chat en Campfire</a>
+      en donde encontrarás otros rubyistas como tú.
+    </dd>
+
+    <dt>
+      Participa en la Comunidad
+    </dt>
+
+    <dd>
+      Lo ideal es que sigas a <a href="http://twitter.com/rubyperu">@rubyperu en twitter</a>
+      para enterarte de cualquier evento. Los eventos <strong>son libres, todos son
+      bienvenidos</strong>, no se requiere invitación o nivel de conocimiento.
+    </dd>
+
+    <dd>
+      Existen también lugares en Lima donde programadores Ruby se reúnen para coworkings,
+      consulta <a href="https://github.com/rubyperu/rubyperu.github.com/wiki/Coworking">
+      esta página</a> para más información.
+    </dd>
+
+    <dt>
+      ¿Cómo nos puedes ayudar?
+    </dt>
+
+    <dd>
+      Nuestro principal objetivo es que Ruby llegue a más personas, podrías comenzar
+      difundiendo la tecnología o nuestra comunidad a tus amigos de la universidad,
+      del trabajo o hasta tu familia. Tenemos diferentes proyectos en los que tu contribución
+      será bienvenida: <a href="https://github.com/rubyperu/aprende.a.programar">Aprende
+      a Programar con Ruby</a>, <a href="https://github.com/rubyperu/introduccion.a.rails">
+      Introducción a Ruby on Rails</a> o el <a href="http://wiki.ruby.pe">Wiki</a>.
+    </dd>
+  </dl>
+
+  <h2>Redes sociales</h2>
+
+  <ul>
+    <li><a href="https://www.facebook.com/rubypegroup">Ruby Perú en Facebook</a></li>
+    <li><a href="http://www.linkedin.com/groups?home=&gid=1897065">Ruby Perú en LinkedIn</a></li>
+  </ul>
+
+  <h2>Agradecimientos</h2>
+
+  <ul>
+    <li><a href="http://streiada.wordpress.com/">Yamili Flores</a> &mdash; Diseño del logo.</li>
+  </ul>
+</section>
