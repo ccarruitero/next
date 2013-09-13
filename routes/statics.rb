@@ -3,7 +3,7 @@ class Statics < Cuba
 
   define do
     on root do
-      res.write view('home')
+      render('home')
     end
   end
 end
