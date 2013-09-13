@@ -5,9 +5,14 @@
 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/normalize/2.1.2/normalize.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/4.3.1/css/foundation.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
+    <header>
+      <a href="/auth/github">Login con GitHub</a>
+    </header>
+
     {{ content }}
   </body>
 </html>
