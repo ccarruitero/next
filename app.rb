@@ -10,6 +10,7 @@ Cuba.plugin Cuba::Mote
 Ohm.connect url: REDIS_URL
 
 Dir['./models/**/*.rb'].each { |f| require f }
+Dir['./routes/**/*.rb'].each { |f| require f }
 
 Cuba.use Rack::Static,
   urls: %w(/css /img),
@@ -18,5 +19,9 @@ Cuba.use Rack::Static,
 Cuba.define do
   on root do
     res.write partial('statics/home')
+  end
+
+  on 'events' do
+    run Events
   end
 end
