@@ -6,4 +6,8 @@ class User < Ohm::Model
   attribute :email
   attribute :url
   attribute :avatar
+
+  attribute :admin, Type::Boolean
+
+  alias :admin? :admin
 end
