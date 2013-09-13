@@ -20,3 +20,6 @@ console:
 
 test:
 	env $$(cat env.sh) cutest test/**/*.rb
+
+db:
+	env $$(cat env.sh) ruby seed.rb
