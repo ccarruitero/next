@@ -9,6 +9,8 @@ Cuba.plugin Cuba::Mote
 
 Ohm.connect url: REDIS_URL
 
+Dir['./models/**/*.rb'].each { |f| require f }
+
 Cuba.use Rack::Static,
   urls: %w(/css /img),
   root: './public'
