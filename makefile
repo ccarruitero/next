@@ -15,5 +15,8 @@ install:
 server:
 	shotgun -o 0.0.0.0
 
+console:
+	pry -r ./app
+
 test:
 	cutest test/**/*.rb
