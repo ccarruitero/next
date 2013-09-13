@@ -1,3 +1,5 @@
+.PHONY: test
+
 setup:
 	gem list gs -i || gem install gs
 
@@ -12,3 +14,6 @@ install:
 
 server:
 	shotgun -o 0.0.0.0
+
+test:
+	cutest test/**/*.rb
