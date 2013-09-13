@@ -6,3 +6,7 @@ require_relative '../app'
 class Cutest::Scope
   alias :response :last_response
 end
+
+prepare do
+  Ohm.flush
+end
