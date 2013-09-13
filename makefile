@@ -13,10 +13,10 @@ install:
 	dep install
 
 server:
-	shotgun -o 0.0.0.0
+	env $$(cat env.sh) shotgun -o 0.0.0.0
 
 console:
-	pry -r ./app
+	env $$(cat env.sh) pry -r ./app
 
 test:
-	cutest test/**/*.rb
+	env $$(cat env.sh) cutest test/**/*.rb

@@ -1,7 +1,13 @@
 require 'cuba'
 require 'cuba/contrib'
+require 'ohm'
+require 'ohm/contrib'
+
+REDIS_URL = ENV.fetch 'REDIS_URL'
 
 Cuba.plugin Cuba::Mote
+
+Ohm.connect url: REDIS_URL
 
 Cuba.use Rack::Static,
   urls: %w(/css /img),
