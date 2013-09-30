@@ -6,6 +6,6 @@ scope do
 
     follow_redirect!
 
-    assert_equal GitHub.authorize_url, last_request.url
+    assert_equal GitHub.oauth_authorize_url, last_request.url
   end
 end
