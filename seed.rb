@@ -1,9 +1,8 @@
 require 'ohm'
-require 'ohm/contrib'
 
 REDIS_URL = ENV.fetch 'REDIS_URL'
 
-Ohm.connect url: REDIS_URL
+Ohm.redis = Redic.new REDIS_URL
 
 Dir['./models/**/*.rb'].each { |f| require f }
 

@@ -1,7 +1,6 @@
 require 'cuba'
 require 'cuba/contrib'
 require 'ohm'
-require 'ohm/contrib'
 
 REDIS_URL = ENV.fetch 'REDIS_URL'
 GITHUB_CLIENT_ID = ENV.fetch 'GITHUB_CLIENT_ID'
@@ -9,7 +8,7 @@ GITHUB_CLIENT_SECRET = ENV.fetch 'GITHUB_CLIENT_SECRET'
 
 Cuba.plugin Cuba::Mote
 
-Ohm.connect url: REDIS_URL
+Ohm.redis = Redic.new REDIS_URL
 
 Dir['./lib/**/*.rb'].each    { |f| require f }
 Dir['./models/**/*.rb'].each { |f| require f }
