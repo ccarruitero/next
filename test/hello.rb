@@ -4,6 +4,6 @@ scope do
   test 'hello world' do
     get '/'
 
-    assert response.ok?
+    assert last_response.ok?
   end
 end
