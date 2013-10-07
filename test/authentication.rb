@@ -18,7 +18,7 @@ scope do
     end
   end
 
-  test 'redirect to github login if access token return by GitHub is not nil' do
+  test 'redirects to github login if access token return by GitHub is not nil' do
     expect GitHub, :fetch_access_token, with: ['whatever'], return: 'token' do
       get '/auth/github', code: 'whatever'
 
