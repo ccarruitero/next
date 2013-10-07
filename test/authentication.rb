@@ -26,4 +26,16 @@ scope do
       assert_equal '/auth/github/token', last_response.location
     end
   end
+
+  test 'renders confirm form with github user info if user is not registered' do
+    github_user = { 'id' => 999, 'name' => 'Francesco', 'email' => 'user@example.org' }
+
+    expect GitHub, :fetch_user, with: ['token'], return: github_user do
+      get '/auth/github/token'
+
+      assert last_response.ok?
+      assert_match github_user['name'], last_response.body
+      assert_match github_user['email'], last_response.body
+    end
+  end
 end

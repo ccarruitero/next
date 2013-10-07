@@ -14,6 +14,12 @@ class Guests < Cuba
       end
 
       on :access_token do |access_token|
+        github_user = GitHub.fetch_user access_token
+        user = User.with :github_id, github_user['id']
+
+        on user.nil? do
+          render 'confirm', title: 'User confirmation', github_user: github_user
+        end
       end
 
       on default do
