@@ -3,6 +3,7 @@ require 'cuba/contrib'
 require 'ohm'
 require 'requests'
 require 'requests/sugar'
+require './settings'
 
 REDIS_URL = ENV.fetch 'REDIS_URL'
 GITHUB_CLIENT_ID = ENV.fetch 'GITHUB_CLIENT_ID'

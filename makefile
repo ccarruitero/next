@@ -5,13 +5,13 @@ install:
 	dep install
 
 server:
-	env $$(cat env.sh) shotgun -o 0.0.0.0
+	shotgun -o 0.0.0.0
 
 console:
-	env $$(cat env.sh) pry -r ./app
+	pry -r ./app
 
 test:
-	env $$(cat env.sh) cutest test/**/*.rb
+	cutest test/**/*.rb
 
 db:
-	env $$(cat env.sh) ruby seed.rb
+	ruby seed.rb

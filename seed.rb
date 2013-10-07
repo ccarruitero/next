@@ -1,4 +1,5 @@
 require 'ohm'
+require './settings'
 
 REDIS_URL = ENV.fetch 'REDIS_URL'
 
