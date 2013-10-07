@@ -24,10 +24,8 @@ scope do
     expect GitHub, :fetch_access_token, with: ['whatever'], return: 'token' do
       get '/auth/github', code: 'whatever'
 
-      follow_redirect!
-
-      assert last_response.ok?
-      assert_equal '/auth/github/token', last_request.path
+      assert last_response.redirect?
+      assert_equal '/auth/github/token', last_response.location
     end
   end
 end
