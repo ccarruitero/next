@@ -1,0 +1,16 @@
+# next
+next version of [ruby.pe](http://ruby.pe)
+
+## Requirements
+I assume you had ruby and a ruby version manager installed
+```
+  make
+```
+
+## Config
+Create ``env.sh``. You can use ``env.sh.example`` to start.
+
+## Use
+```
+rackup
+```
